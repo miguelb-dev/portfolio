@@ -181,7 +181,7 @@ const Header = () => {
             </a>
           </li>
           <li className={styles["ul__li"]}>
-            <a href="/src/assets/doc/miguel-bethancourt.docx">Curriculum</a>
+            <a href="/src/assets/doc/miguel-bethancourt.pdf">Curriculum</a>
           </li>
         </ul>
       </nav>
