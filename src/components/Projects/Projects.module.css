@@ -1,0 +1,102 @@
+.subtitle {
+  color: aliceblue;
+  text-align: center;
+}
+
+.projects-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  color: rgb(156, 163, 175);
+  margin-bottom: 100px;
+}
+
+.project {
+  width: 400px;
+  background-color: rgb(33, 33, 34);
+  border: 0.4px solid rgb(48, 49, 52);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: border 0.5s;
+}
+
+.project:hover {
+  border: 0.4px solid rgba(53, 211, 153, 0.753);
+}
+
+.project__capture-wrapper {
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+}
+
+.project__capture {
+  width: 100%;
+  display: block;
+  border-radius: 4.5px 4.5px 0 0;
+  transition: 0.4s;
+  overflow: hidden;
+}
+
+/* Efecto de lupa en la imagen */
+.project:hover .project__capture {
+  transform: scale(1.08);
+}
+
+.project__info-wrapper {
+  padding: 0 1em;
+}
+
+.project__name {
+  margin: 1em 0;
+  color: white;
+}
+
+.project__description {
+  color: rgb(156, 163, 175);
+  font-size: 0.9em;
+  margin-bottom: 1.2em;
+}
+
+.project__stack {
+  margin-bottom: 1em;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.8em;
+}
+
+.project__stack li {
+  color: rgb(53, 211, 153);
+  font-size: 0.8em;
+  padding: 0.4em 1em;
+  background-color: rgb(25, 24, 26);
+  border: 0.4px solid rgb(48, 49, 52);
+  border-radius: 50px;
+}
+
+.links-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin: 2.5em 0 1.5em;
+}
+
+.link {
+  color: rgb(156, 163, 175);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: rgb(53, 211, 152);
+  text-decoration: underline;
+}
+
+/* Corrige el del ícono del link */
+.link i {
+  position: relative;
+  right: 0.5em;
+  top: 1px;
+}

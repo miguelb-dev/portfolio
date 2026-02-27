@@ -1,0 +1,241 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(24, 25, 26, 0.938);
+}
+
+.logo {
+  width: 45px;
+  margin-top: 5px;
+  border-radius: 6px;
+  transition: transform 0.2s;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+.navbar {
+  height: 4em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Botón hamburguesa */
+.navbar__hamburger {
+  display: none; /* Oculto por defecto en desktop */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 100;
+  position: relative;
+}
+
+.hamburger-icon,
+.close-icon {
+  width: 30px;
+  height: 30px;
+  color: white;
+  transition: transform 0.2s;
+}
+
+/* Overlay para cuando el menú está abierto */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 90;
+  animation: fadeIn 0.3s ease;
+}
+
+.hamburger-icon:hover,
+.close-icon:hover {
+  transform: scale(1.1);
+  color: rgb(53, 211, 152);
+}
+
+.nav__ul {
+  display: flex;
+  gap: 10px;
+}
+
+.ul__li {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ul__li a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.ul__li a:hover {
+  color: rgb(53, 211, 152);
+  background-color: rgb(32, 32, 34);
+}
+
+/* Estilos en base a la sección de la página activa */
+.ul__li a.active {
+  color: rgb(53, 211, 152);
+  font-weight: 600;
+  position: relative;
+}
+
+/* Eefecto de subrayado animado */
+.ul__li a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(53, 211, 152);
+  animation: slideIn 0.3s ease;
+}
+
+/* --- RESPONSIVE DESIGNE --- */
+/* Estilos para móviles */
+@media (width <= 768px) {
+  .navbar__hamburger {
+    display: block; /* Mostrar botón hamburguesa en móvil */
+    position: absolute;
+    left: 20px;
+    top: 8px;
+  }
+
+  .navbar {
+    justify-content: center;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  /* Menú móvil */
+  .nav__ul {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: rgba(24, 25, 26, 0.98);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 80px;
+    gap: 20px;
+    transition: left 0.3s ease;
+    z-index: 95;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav__ul--open {
+    left: 0; /* Mostrar menú */
+  }
+
+  .ul__li {
+    width: 100%;
+  }
+
+  .ul__li a {
+    width: 100%;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+  }
+
+  .ul__li a:hover {
+    background-color: rgb(42, 43, 45);
+  }
+
+  /* Mostrar overlay cuando el menú está abierto */
+  .overlay {
+    display: block;
+  }
+
+  /* Animación para los items del menú */
+  .nav__ul--open .ul__li {
+    animation: slideInLeft 0.3s ease forwards;
+    opacity: 0;
+  }
+
+  .nav__ul--open .ul__li:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .nav__ul--open .ul__li:nth-child(2) {
+    animation-delay: 0.15s;
+  }
+  .nav__ul--open .ul__li:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  .nav__ul--open .ul__li:nth-child(4) {
+    animation-delay: 0.25s;
+  }
+  .nav__ul--open .ul__li:nth-child(5) {
+    animation-delay: 0.3s;
+  }
+  .nav__ul--open .ul__li:nth-child(6) {
+    animation-delay: 0.35s;
+  }
+  .nav__ul--open .ul__li:nth-child(7) {
+    animation-delay: 0.4s;
+  }
+}
+
+/* Estilos para tablets */
+@media (width > 769px) and (width <= 1024px) {
+  .nav__ul {
+    gap: 5px;
+  }
+
+  .ul__li a {
+    padding: 0.5em 0.8em;
+    font-size: 0.9rem;
+  }
+}
+
+/* --- ANIMACIONES --- */
+/* Para remarcar los enlaces de la barra de navegación en desk y móvil */
+@keyframes slideIn {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Para el efecto de overlay en el body cuando aparece el menú hamburguesa */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Para hacer aparecer los enlaces en el menú hamburguesa */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

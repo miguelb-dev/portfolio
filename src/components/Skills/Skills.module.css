@@ -1,0 +1,43 @@
+.subtitle {
+  color: aliceblue;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  margin: auto;
+  width: 70%;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  color: rgb(105, 105, 105);
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  gap: 0.5em;
+  flex-basis: 130px;
+  height: 130px;
+  background-color: rgb(33, 33, 34);
+  border: 0.4px solid rgb(48, 49, 52);
+  border-radius: 6px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  transition:
+    transform 0.15s,
+    filter 0.15s;
+}
+
+/* Leve efecto al pasar el mouse por encima de la skill */
+.skill:hover .icon {
+  transform: scale(1.2);
+  filter: drop-shadow(0px 0px 40px var(--hover-color));
+}

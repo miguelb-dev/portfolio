@@ -1,0 +1,83 @@
+.hero {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+
+/* Contenedor de la información y la foto de perfil */
+.hero__information {
+  flex-basis: 600px;
+}
+
+/* Información del perfil */
+.hero__title {
+  color: white;
+  font-family: Borsok;
+  font-size: 3.3em;
+  margin-bottom: 0.1em;
+}
+
+.hero__title--efect {
+  color: rgb(53, 211, 152);
+  font-family: Borsok;
+}
+
+.hero__sub-title {
+  color: rgb(156, 163, 175);
+  font-family: Montserrat;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.hero__description {
+  color: rgb(156, 163, 175);
+  margin: 2em 0;
+}
+
+.buttons-wrapper {
+  margin: 1em 0;
+  display: flex;
+  gap: 2em;
+}
+
+#contactButton,
+#projectsButton {
+  text-decoration: none;
+  display: block;
+  padding: 0.8em 1.5em;
+  transition: background-color 0.2s;
+  border-radius: 6px;
+}
+
+#contactButton {
+  color: black;
+  background-color: rgb(53, 211, 152);
+}
+
+#contactButton:hover {
+  background-color: rgb(35, 165, 117);
+}
+
+#projectsButton {
+  color: rgb(53, 211, 152);
+  border: 1px solid rgb(53, 211, 152);
+}
+
+#projectsButton:hover {
+  background-color: rgba(53, 211, 153, 0.11);
+}
+
+/* Fotografía del perfil */
+.hero__photo-wrapper {
+  flex-basis: 300px;
+  display: flex;
+  margin-right: 7%;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__photo {
+  object-fit: cover;
+  width: 250px;
+  border-radius: 50%;
+}

@@ -1,0 +1,80 @@
+.subtitle {
+  color: aliceblue;
+  text-align: center;
+}
+
+.experiences-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 450px;
+  justify-content: center;
+  gap: 3em;
+  flex-wrap: wrap;
+  color: rgb(156, 163, 175);
+}
+
+.work__date {
+  font-size: 0.8em;
+}
+/* El icono del calendario */
+.calendar-icon {
+  color: rgb(53, 211, 152);
+  margin-right: 0.5em;
+}
+
+.work {
+  padding: 1.5em;
+  background-color: rgb(33, 33, 34);
+  border: 0.4px solid rgb(48, 49, 52);
+  border-radius: 6px;
+  transition: border 0.5s;
+}
+
+.work:hover {
+  border: 0.4px solid rgba(53, 211, 153, 0.753);
+}
+
+.work-wrapper {
+  display: flex;
+  gap: 1em;
+  margin: 1.2em 0 1.5em;
+}
+
+.role-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.work__role {
+  color: white;
+  font-size: 1.3em;
+}
+
+.work__company-name {
+  color: rgb(53, 211, 152);
+  font-size: 0.8em;
+}
+
+.work__icon {
+  width: 65px;
+  height: 60px;
+  border-radius: 6px;
+}
+
+.work__points {
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+/* O aplicar a toda la lista */
+.work__points ::marker {
+  color: rgb(53, 211, 152);
+}
+
+.work__points li {
+  font-size: 0.9em;
+}
