@@ -8,7 +8,7 @@ En este proyecto verás mi trayectoria como desarrollador, habilidades, proyecto
 
 ## Live Demo
 
-👉 [Ver portfolio](www.portfolio.com)
+👉 [Ver portfolio](https://miguelbethancourt.vercel.app)
 
 ## Características
 
@@ -30,7 +30,7 @@ En este proyecto verás mi trayectoria como desarrollador, habilidades, proyecto
 1. Clona el repositorio
 
 ```bash
-   git clone https://github.com/tu-usuario/portafolio.git
+   git clone https://github.com/miguelb-dev/portfolio.git
 ```
 
 2. Instala las dependencias
@@ -61,12 +61,12 @@ Se aceptan colaboraciones y opiniones sobre el proyecto:
 
 Este proyecto es de código abierto y está disponible bajo la **Licencia de MIT**.
 
-Siénte libre de usar, modificar y compartir. Puedes leer la [LICENCIA](https://github.com/miguelb-dev/portfolio/LICENSE) para más información.
+Siénte libre de usar, modificar y compartir. Puedes leer la [LICENCIA](https://github.com/miguelb-dev/portfolio/blob/main/LICENSE) para más información.
 
 ## Contacto
 
 Si tienes alguna sugerencia, pregunta o feedback, no dudes en escribir:
 
 - Email: <mbethancourt2005@gmail.com>
-- GitHub: miguelb-dev
-- Portfolio: [miguelb-dev](www.portfolio.com)
+- GitHub: [miguelb-dev](https://github.com/miguelb-dev)
+- Portfolio: [Miguel Bethancourt](https://miguelbethancourt.vercel.app)
