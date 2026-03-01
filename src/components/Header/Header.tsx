@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useActiveSection } from "../../hooks/useActiveSection";
 import styles from "./Header.module.css";
 import me from "../../assets/img/me.png";
+import cvIcon from "../../assets/icon/cv-green-color.svg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -181,7 +182,10 @@ const Header = () => {
             </a>
           </li>
           <li className={styles["ul__li"]}>
-            <a href="/src/assets/doc/miguel-bethancourt.pdf">Curriculum</a>
+            <a id={styles["cv"]} href="/src/assets/doc/miguel-bethancourt.pdf">
+              <img id={styles["cvIcon"]} src={cvIcon} alt="CV Icon" />
+              Curriculum
+            </a>
           </li>
         </ul>
       </nav>

@@ -1,0 +1,82 @@
+.subtitle {
+  color: aliceblue;
+  text-align: center;
+}
+
+.contact-form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  padding: 1.5em;
+  background-color: rgb(33, 33, 34);
+  border: 0.4px solid rgb(48, 49, 52);
+  border-radius: 6px;
+  transition: border 0.5s;
+}
+
+.contact-form__title {
+  color: aliceblue;
+  font-size: 1.3em;
+  margin-bottom: 1.5em;
+}
+.contact-form__title--efect {
+  color: rgb(53, 211, 152);
+}
+
+.contact-form:hover {
+  border: 0.4px solid rgba(53, 211, 153, 0.753);
+}
+
+.contact-form__label {
+  margin-bottom: 0.7em;
+  font-size: 0.9em;
+  color: rgb(156, 163, 175);
+}
+
+.contact-form__label > span {
+  color: rgb(182, 41, 41);
+}
+
+.contact-form__input {
+  width: 100%;
+  margin-bottom: 1.8em;
+  color: aliceblue;
+  padding: 1em 1.2em;
+  background-color: rgb(25, 24, 26);
+  border: 0.4px solid rgb(48, 49, 52);
+  border-radius: 10px;
+  transition: outline 0.2s;
+}
+
+.contact-form__input:focus {
+  outline: 0.4px solid rgba(53, 211, 153, 0.753);
+}
+
+textarea.contact-form__input {
+  resize: none;
+}
+
+.contact-form__button {
+  margin-top: 0.5em;
+  color: rgb(25, 24, 26);
+  font-weight: bold;
+  padding: 1em;
+  background-color: rgb(53, 211, 152);
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.2s;
+}
+
+.contact-form__button:hover {
+  cursor: pointer;
+  background-color: rgb(35, 165, 117);
+}
+
+/* Para poder alinear el icono con el texto */
+.button__icon {
+  width: 19px;
+  position: relative;
+  top: 5px;
+  left: -5px;
+}

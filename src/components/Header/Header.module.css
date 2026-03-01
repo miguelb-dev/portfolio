@@ -18,9 +18,11 @@
 }
 
 .navbar {
+  margin: auto;
+  width: 92%;
   height: 4em;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -64,7 +66,7 @@
 
 .nav__ul {
   display: flex;
-  gap: 10px;
+  gap: 5px;
 }
 
 .ul__li {
@@ -107,6 +109,28 @@
   animation: slideIn 0.3s ease;
 }
 
+/* Botón de descarga de CV */
+#cv {
+  margin-left: 10px;
+  border: 1px solid rgb(53, 211, 152);
+  color: rgb(53, 211, 152);
+  background-color: transparent;
+}
+#cv:hover {
+  background-color: rgba(53, 211, 153, 0.11);
+}
+/* Para poder alinear el icono con el texto */
+#cvIcon {
+  width: 19px;
+  position: relative;
+  top: 3px;
+  left: -7px;
+  transition: transform 0.2s;
+}
+#cv:hover #cvIcon {
+  transform: rotate(15deg);
+}
+
 /* --- RESPONSIVE DESIGNE --- */
 /* Estilos para móviles */
 @media (width <= 768px) {
@@ -118,6 +142,7 @@
   }
 
   .navbar {
+    width: 100%;
     justify-content: center;
     padding: 0 20px;
     position: relative;
