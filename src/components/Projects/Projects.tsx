@@ -43,6 +43,7 @@ const Projects = () => {
                   className={styles["link"]}
                   href={project.repo}
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <i className={`fa-brands fa-github ${styles["links"]}`}></i>
                   Ver Repo
@@ -52,6 +53,7 @@ const Projects = () => {
                   className={styles["link"]}
                   href={project.liveView}
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <i className={`fa-solid fa-globe ${styles["links"]}`}></i>Ver
                   en vivo

@@ -93,7 +93,7 @@
 /* Estilos en base a la sección de la página activa */
 .ul__li a.active {
   color: rgb(53, 211, 152);
-  font-weight: 600;
+  font-weight: bold;
   position: relative;
 }
 
@@ -110,25 +110,28 @@
 }
 
 /* Botón de descarga de CV */
-#cv {
+.ul__li:last-child a {
   margin-left: 10px;
+  padding: 0.5em 1em 0.5em 0.8em;
+}
+#cv {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-weight: bold;
   border: 1px solid rgb(53, 211, 152);
   color: rgb(53, 211, 152);
-  background-color: transparent;
 }
 #cv:hover {
-  background-color: rgba(53, 211, 153, 0.11);
+  background-color: rgb(35, 165, 117);
+  color: black;
 }
-/* Para poder alinear el icono con el texto */
-#cvIcon {
-  width: 19px;
+#cv svg {
   position: relative;
-  top: 3px;
-  left: -7px;
   transition: transform 0.2s;
 }
-#cv:hover #cvIcon {
-  transform: rotate(15deg);
+#cv:hover svg {
+  transform: rotate(15deg) scale(1.3);
 }
 
 /* --- RESPONSIVE DESIGNE --- */
@@ -184,6 +187,11 @@
 
   .ul__li a:hover {
     background-color: rgb(42, 43, 45);
+  }
+
+  /* Corrige los estilos del Botón de descarga de CV */
+  .ul__li:last-child a {
+    margin: 0px;
   }
 
   /* Mostrar overlay cuando el menú está abierto */

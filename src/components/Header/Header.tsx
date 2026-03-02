@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useActiveSection } from "../../hooks/useActiveSection";
 import styles from "./Header.module.css";
 import me from "../../assets/img/me.png";
-import cvIcon from "../../assets/icon/cv-green-color.svg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -182,8 +181,27 @@ const Header = () => {
             </a>
           </li>
           <li className={styles["ul__li"]}>
-            <a id={styles["cv"]} href="/src/assets/doc/miguel-bethancourt.pdf">
-              <img id={styles["cvIcon"]} src={cvIcon} alt="CV Icon" />
+            <a
+              id={styles["cv"]}
+              href="/src/assets/doc/miguel-bethancourt.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                className="w-5 h-5 transition-transform group-hover/resume:scale-110 group-hover/resume:rotate-12"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                width="22"
+                height="20"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                ></path>
+              </svg>
               Curriculum
             </a>
           </li>

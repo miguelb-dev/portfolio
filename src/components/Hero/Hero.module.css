@@ -34,37 +34,72 @@
   margin: 2em 0;
 }
 
+/* Botones de llamado a la accion */
 .buttons-wrapper {
   margin: 1em 0;
   display: flex;
-  gap: 2em;
+  gap: 1em;
 }
-
 #contactButton,
 #projectsButton {
   text-decoration: none;
   display: block;
   padding: 0.8em 1.5em;
-  transition: background-color 0.2s;
   border-radius: 6px;
+  transition: background-color 0.2s;
 }
-
 #contactButton {
   color: black;
   background-color: rgb(53, 211, 152);
 }
-
-#contactButton:hover {
-  background-color: rgb(35, 165, 117);
-}
-
 #projectsButton {
   color: rgb(53, 211, 152);
   border: 1px solid rgb(53, 211, 152);
 }
 
+/* Efecto de los botones al pasar el mouse por encima */
+#contactButton:hover {
+  background-color: rgb(35, 165, 117);
+}
 #projectsButton:hover {
   background-color: rgba(53, 211, 153, 0.11);
+}
+
+/* Redes sociales */
+.social-media {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin-top: 2em;
+}
+.social-media li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(33, 33, 34);
+  padding: 0.5em 0.6em 0.3em;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+.social-media li a {
+  color: rgb(53, 211, 152);
+  transition: color 0.2s;
+}
+/* Corrige los tamaños de los iconos */
+.social-media li:first-child {
+  padding-right: 0.51em;
+}
+.social-media li:last-child {
+  padding-left: 10px;
+  padding-right: 10.5px;
+}
+
+/* Efecto de los links al pasar el mouse por encima */
+.social-media li:hover {
+  background-color: rgb(35, 165, 117);
+}
+.social-media li:hover a {
+  color: black;
 }
 
 /* Fotografía del perfil */
