@@ -58,11 +58,16 @@ textarea.contact-form__input {
 }
 
 .contact-form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
   margin-top: 0.5em;
-  color: rgb(25, 24, 26);
-  font-weight: bold;
   padding: 1em;
+  color: rgb(25, 24, 26);
   background-color: rgb(53, 211, 152);
+  font-size: 0.9em;
+  font-weight: bold;
   border: none;
   border-radius: 10px;
   transition: background-color 0.2s;
@@ -71,12 +76,4 @@ textarea.contact-form__input {
 .contact-form__button:hover {
   cursor: pointer;
   background-color: rgb(35, 165, 117);
-}
-
-/* Para poder alinear el icono con el texto */
-.button__icon {
-  width: 19px;
-  position: relative;
-  top: 5px;
-  left: -5px;
 }

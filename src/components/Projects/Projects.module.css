@@ -85,6 +85,10 @@
 }
 
 .link {
+  display: flex;
+  justify-content: center;
+  gap: 0.35em;
+  align-items: center;
   color: rgb(156, 163, 175);
   text-decoration: none;
 }
@@ -92,11 +96,4 @@
 .link:hover {
   color: rgb(53, 211, 152);
   text-decoration: underline;
-}
-
-/* Corrige el del ícono del link */
-.link i {
-  position: relative;
-  right: 0.5em;
-  top: 1px;
 }
