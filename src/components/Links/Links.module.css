@@ -1,0 +1,37 @@
+/* Redes sociales */
+.social-media {
+  display: inline-flex;
+  gap: 10px;
+  list-style: none;
+}
+.social-media li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(33, 33, 34);
+  border: 0.4px solid rgb(48, 49, 52);
+  border-radius: 6px;
+  padding: 9px 10px 5px;
+  transition: border-color 0.2s;
+}
+.social-media li a {
+  color: rgb(53, 211, 152);
+  transition: color 0.2s;
+}
+
+/* Corrige el tamano del icono de github */
+.social-media li:first-child {
+  padding-right: 9px;
+}
+
+/* Efecto de los links al pasar el mouse por encima */
+.social-media li:hover {
+  border-color: rgb(53, 211, 152);
+}
+
+.social-media li a svg {
+  transition: transform 0.2s;
+}
+.social-media li:hover svg {
+  transform: scale(1.1);
+}

@@ -59,9 +59,11 @@ Se aceptan colaboraciones y opiniones sobre el proyecto:
 
 ## Licencia
 
-Este proyecto es de código abierto y está disponible bajo la **Licencia de MIT**.
+- **Código fuente**: MIT - puedes usar, modificar y distribuir el código. Para más información lee la [LICENCIA](https://github.com/miguelb-dev/portfolio/blob/main/LICENSE).
+- **Contenido personal**: © 2026 Miguel Bethancourt - Todos los derechos reservados.
+- **Imágenes y fotografías**: No está permitido su uso sin autorización explícita.
 
-Siénte libre de usar, modificar y compartir. Puedes leer la [LICENCIA](https://github.com/miguelb-dev/portfolio/blob/main/LICENSE) para más información.
+El código de este portfolio es libre, pero los elementos personales (fotos, biografía, datos de contacto) son de mi propiedad.
 
 ## Contacto
 

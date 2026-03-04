@@ -6,6 +6,7 @@
 }
 
 body {
+  min-height: 100dvh;
   background: radial-gradient(
     circle at 50% 50%,
     #0c241f 0%,
@@ -13,5 +14,4 @@ body {
     #111111 70%,
     #000000 100%
   );
-  min-height: 100vh;
 }
