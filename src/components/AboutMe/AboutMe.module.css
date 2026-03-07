@@ -1,0 +1,23 @@
+.subtitle {
+  color: var(--color-primary-text);
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.aboutme__description {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: auto;
+  padding: 1.5em;
+  width: 600px;
+  color: var(--color-secundary-text);
+  background-color: var(--color-background);
+  border: 0.4px solid rgb(48, 49, 52);
+  border-radius: 6px;
+}
+
+.description__title {
+  color: var(--color-primary-text);
+}

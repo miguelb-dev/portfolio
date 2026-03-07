@@ -1,42 +1,44 @@
 .hero {
   display: flex;
-  justify-content: space-around;
-  margin: 50px 0;
+  justify-content: start;
+  gap: 120px;
+  margin: 80px 0 0 100px;
 }
 
 /* Contenedor de la información y la foto de perfil */
 .hero__information {
-  flex-basis: 600px;
+  flex-basis: 650px;
 }
 
 /* Información del perfil */
 .hero__title {
-  color: white;
+  color: var(--color-primary-text);
   font-family: Borsok;
-  font-size: 3.3em;
+  font-size: 3.5em;
   margin-bottom: 0.1em;
 }
 
 .hero__title--efect {
-  color: rgb(53, 211, 152);
+  color: var(--color-primary);
   font-family: Borsok;
 }
 
 .hero__sub-title {
-  color: rgb(156, 163, 175);
+  color: var(--color-secundary-text);
   font-family: Montserrat;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 400;
 }
 
 .hero__description {
-  color: rgb(156, 163, 175);
+  color: var(--color-secundary-text);
+  font-size: 1.15em;
   margin: 2em 0;
 }
 
 /* Botones de llamado a la accion */
 .buttons-wrapper {
-  margin: 1em 0 2em;
+  margin: 1em 0 3em;
   display: flex;
   gap: 1em;
 }
@@ -50,16 +52,16 @@
 }
 #contactButton {
   color: black;
-  background-color: rgb(53, 211, 152);
+  background-color: var(--color-primary);
 }
 #projectsButton {
-  color: rgb(53, 211, 152);
-  border: 1px solid rgb(53, 211, 152);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
 }
 
 /* Efecto de los botones al pasar el mouse por encima */
 #contactButton:hover {
-  background-color: rgb(35, 165, 117);
+  background-color: var(--color-darker-primary);
 }
 #projectsButton:hover {
   background-color: rgba(53, 211, 153, 0.11);
@@ -69,13 +71,12 @@
 .hero__photo-wrapper {
   flex-basis: 300px;
   display: flex;
-  margin-right: 7%;
   justify-content: center;
   align-items: center;
 }
 
 .hero__photo {
   object-fit: cover;
-  width: 250px;
+  width: 100%;
   border-radius: 50%;
 }

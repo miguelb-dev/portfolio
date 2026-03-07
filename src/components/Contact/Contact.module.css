@@ -1,6 +1,8 @@
 .subtitle {
-  color: aliceblue;
+  color: var(--color-primary-text);
   text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
 }
 
 .contact-form {
@@ -9,29 +11,29 @@
   flex-direction: column;
   width: 600px;
   padding: 1.5em;
-  background-color: rgb(33, 33, 34);
+  background-color: var(--color-background);
   border: 0.4px solid rgb(48, 49, 52);
   border-radius: 6px;
   transition: border 0.5s;
 }
 
 .contact-form__title {
-  color: aliceblue;
+  color: var(--color-primary-text);
   font-size: 1.3em;
   margin-bottom: 1.5em;
 }
 .contact-form__title--efect {
-  color: rgb(53, 211, 152);
+  color: var(--color-primary);
 }
 
 .contact-form:hover {
-  border: 0.4px solid rgba(53, 211, 153, 0.753);
+  border: 0.4px solid var(--color-darker-primary);
 }
 
 .contact-form__label {
   margin-bottom: 0.7em;
   font-size: 0.9em;
-  color: rgb(156, 163, 175);
+  color: var(--color-secundary-text);
 }
 
 .contact-form__label > span {
@@ -41,7 +43,7 @@
 .contact-form__input {
   width: 100%;
   margin-bottom: 1.8em;
-  color: aliceblue;
+  color: var(--color-primary-text);
   padding: 1em 1.2em;
   background-color: rgb(25, 24, 26);
   border: 0.4px solid rgb(48, 49, 52);
@@ -50,7 +52,7 @@
 }
 
 .contact-form__input:focus {
-  outline: 0.4px solid rgba(53, 211, 153, 0.753);
+  outline: 0.4px solid var(--color-darker-primary);
 }
 
 textarea.contact-form__input {
@@ -65,7 +67,7 @@ textarea.contact-form__input {
   margin-top: 0.5em;
   padding: 1em;
   color: rgb(25, 24, 26);
-  background-color: rgb(53, 211, 152);
+  background-color: var(--color-primary);
   font-size: 0.9em;
   font-weight: bold;
   border: none;
@@ -75,5 +77,5 @@ textarea.contact-form__input {
 
 .contact-form__button:hover {
   cursor: pointer;
-  background-color: rgb(35, 165, 117);
+  background-color: var(--color-darker-primary);
 }

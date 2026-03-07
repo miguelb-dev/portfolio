@@ -6,17 +6,17 @@ import me from "../../assets/img/me.png";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Definimos las secciones que queremos observar
+  // Secciones del portfolio a observae
   const sections = [
     "hero",
-    "aboutme",
+    "aboutMe",
     "experience",
     "skills",
     "projects",
     "contact",
   ];
 
-  // Usamos el hook para obtener la sección activa
+  // Hook para obtener la sección activa
   const activeSection = useActiveSection({
     sectionIds: sections,
     threshold: 0.5,
@@ -73,8 +73,8 @@ const Header = () => {
 
   return (
     <header className={styles["header"]}>
-      {/* Botón hamburguesa */}
       <nav className={styles["navbar"]}>
+        {/* Botón hamburguesa */}
         <button
           className={styles["navbar__hamburger"]}
           onClick={toggleMenu}
@@ -110,6 +110,8 @@ const Header = () => {
             </svg>
           )}
         </button>
+
+        {/* Logo del dev */}
         <a
           className={styles["navbar__dev-icon"]}
           href="#hero"
@@ -137,11 +139,11 @@ const Header = () => {
           </li>
           <li className={styles["ul__li"]}>
             <a
-              href="#aboutme"
-              onClick={(e) => scrollToSection(e, "aboutme")}
-              className={isActive("aboutme") ? styles["active"] : ""}
+              href="#aboutMe"
+              onClick={(e) => scrollToSection(e, "aboutMe")}
+              className={isActive("aboutMe") ? styles["active"] : ""}
             >
-              Sobre mi
+              Sobre Mí
             </a>
           </li>
           <li className={styles["ul__li"]}>

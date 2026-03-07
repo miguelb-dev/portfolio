@@ -1,6 +1,8 @@
 .subtitle {
-  color: aliceblue;
+  color: var(--color-primary-text);
   text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
 }
 
 .skills-container {
@@ -22,7 +24,7 @@
   gap: 0.5em;
   flex-basis: 130px;
   height: 130px;
-  background-color: rgb(33, 33, 34);
+  background-color: var(--color-background);
   border: 0.4px solid rgb(48, 49, 52);
   border-radius: 6px;
 }

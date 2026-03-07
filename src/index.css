@@ -5,6 +5,19 @@
   font-family: "Montserrat";
 }
 
+:root {
+  --color-primary: rgb(53, 211, 152);
+  --color-darker-primary: rgb(35, 165, 117);
+  --color-primary-text: rgb(211 212 212);
+  --color-secundary-text: rgb(156, 163, 175);
+  --color-background: rgb(33, 33, 34);
+}
+
+html {
+  scrollbar-color: var(--color-primary) var(--color-background);
+  scrollbar-width: thin;
+}
+
 body {
   min-height: 100dvh;
   background: radial-gradient(

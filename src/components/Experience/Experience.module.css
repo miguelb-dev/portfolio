@@ -1,6 +1,8 @@
 .subtitle {
-  color: aliceblue;
+  color: var(--color-primary-text);
   text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
 }
 
 .experiences-container {
@@ -11,7 +13,7 @@
   justify-content: center;
   gap: 3em;
   flex-wrap: wrap;
-  color: rgb(156, 163, 175);
+  color: var(--color-secundary-text);
 }
 
 .work__date {
@@ -22,19 +24,19 @@
 }
 /* El icono del calendario */
 .work__date svg {
-  color: rgb(53, 211, 152);
+  color: var(--color-primary);
 }
 
 .work {
   padding: 1.5em;
-  background-color: rgb(33, 33, 34);
+  background-color: var(--color-background);
   border: 0.4px solid rgb(48, 49, 52);
   border-radius: 6px;
   transition: border 0.5s;
 }
 
 .work:hover {
-  border: 0.4px solid rgba(53, 211, 153, 0.753);
+  border: 0.4px solid var(--color-darker-primary);
 }
 
 .work-wrapper {
@@ -50,12 +52,12 @@
 }
 
 .work__role {
-  color: white;
+  color: var(--color-primary-text);
   font-size: 1.3em;
 }
 
 .work__company-name {
-  color: rgb(53, 211, 152);
+  color: var(--color-primary);
   font-size: 0.8em;
 }
 
@@ -74,7 +76,7 @@
 
 /* O aplicar a toda la lista */
 .work__points ::marker {
-  color: rgb(53, 211, 152);
+  color: var(--color-primary);
 }
 
 .work__points li {

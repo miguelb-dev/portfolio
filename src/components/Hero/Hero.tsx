@@ -15,9 +15,8 @@ const Hero = () => {
           <span className={styles["hero__title--efect"]}>Developer</span>
         </h2>
         <p className={styles["hero__description"]}>
-          Soy un apasionado desarrollador que construye aplicaciones web
-          robustas, escalables y con un fuerte enfoque en la experiencia del
-          usuario.
+          Apasionado desarrollador de aplicaciones web robustas, escalables y
+          con un fuerte enfoque en la experiencia del usuario.
         </p>
         <div className={styles["buttons-wrapper"]}>
           <a
