@@ -1,6 +1,6 @@
 # Mi Portfolio
 
-¡Bienvenido a mi portafolio!
+¡Bienvenido!
 
 En este proyecto verás mi trayectoria como desarrollador, habilidades, proyectos destacados y formas de contacto.
 
