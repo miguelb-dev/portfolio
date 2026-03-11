@@ -3,7 +3,7 @@ import styles from "./Skills.module.css";
 
 const Skills = () => {
   return (
-    <article id="skills">
+    <article id="skills" className="reveal-animation">
       <h2 className={styles["subtitle"]}>
         <span style={{ color: "grey" }}>&lt;</span>
         <span>/ </span>

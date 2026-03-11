@@ -2,7 +2,7 @@ import styles from "./AboutMe.module.css";
 
 const AboutMe = () => {
   return (
-    <article id="aboutMe">
+    <article id="aboutMe" className="reveal-animation">
       <h2 className={styles["subtitle"]}>
         <span style={{ color: "grey" }}>&lt;</span>
         <span>/ </span>

@@ -11,3 +11,8 @@
   flex-direction: column;
   gap: 150px;
 }
+
+/* Ajusta la altura en la que se ve la seccion de la pagina al hacer click en un link de la navbar */
+article {
+  scroll-margin-top: 120px;
+}

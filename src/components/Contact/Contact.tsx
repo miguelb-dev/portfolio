@@ -2,7 +2,7 @@ import styles from "./Contact.module.css";
 
 const Contact = () => {
   return (
-    <article id="contact" className={styles["contact"]}>
+    <article id="contact" className="reveal-animation">
       <h2 className={styles["subtitle"]}>
         <span style={{ color: "grey" }}>&lt;</span>
         <span>/ </span>

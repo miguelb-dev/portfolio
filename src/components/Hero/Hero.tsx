@@ -34,7 +34,7 @@ const Hero = () => {
             Ver Proyectos
           </a>
         </div>
-        <Links></Links>
+        <Links />
       </section>
       <div className={styles["hero__photo-wrapper"]}>
         <img className={styles["hero__photo"]} src={me} alt="Foto de perfil" />

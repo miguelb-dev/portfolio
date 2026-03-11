@@ -4,7 +4,7 @@
 
 En este proyecto verás mi trayectoria como desarrollador, habilidades, proyectos destacados y formas de contacto.
 
-![me](/public/hero.png)
+![me](/public/hero.jpg)
 
 ## Live Demo
 

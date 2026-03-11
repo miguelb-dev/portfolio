@@ -3,7 +3,7 @@ import { projects } from "../../constants";
 
 const Projects = () => {
   return (
-    <article id="projects">
+    <article id="projects" className="reveal-animation">
       <h2 className={styles["subtitle"]}>
         <span style={{ color: "grey" }}>&lt;</span>
         <span>/ </span>

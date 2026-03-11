@@ -1,0 +1,17 @@
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal-animation {
+  position: relative;
+  animation: reveal both;
+  animation-timeline: view(block);
+  animation-range: cover 8% cover 40%;
+}
