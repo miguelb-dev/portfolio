@@ -18,7 +18,7 @@ const AboutMe = () => {
         <p className={styles["description__paragraph"]}>
           Empecé como desarrollador frontend y administrador de bases de datos
           SQL en el Complejo Educativo Rafael Rangel (Valera, Venezuela).
-          Actualmente, trabajo en la planta de Venvidrio (Valera, Venezuela)
+          Actualmente, trabajo en la Venezolana del Vidrio C.A (Venvidrio) (Valera, Venezuela)
           desarrollando desde cero un sistema fullstack para el registro y
           control de la producción de envases de vidrio.
         </p>

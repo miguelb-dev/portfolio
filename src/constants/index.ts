@@ -83,7 +83,7 @@ const technologies = [
 
 const experiences = [
   {
-    date: "Diciembre 2025 - Enero 2026",
+    date: "Noviembre 2024 - Diciembre 2025",
     companyName: "Complejo Educativo Rafael Rangel",
     icon: rafaelrangel,
     role: "Desarrollador Front-End",

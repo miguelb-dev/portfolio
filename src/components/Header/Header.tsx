@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useActiveSection } from "../../hooks/useActiveSection";
 import styles from "./Header.module.css";
 import me from "../../assets/img/me.png";
+import cv from "../../assets/doc/miguel-bethancourt.pdf"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -185,7 +186,7 @@ const Header = () => {
           <li className={styles["ul__li"]}>
             <a
               id={styles["cv"]}
-              href="/src/assets/doc/miguel-bethancourt.pdf"
+              href={cv}
               target="_blank"
               rel="noopener noreferrer"
             >
