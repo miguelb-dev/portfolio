@@ -5,6 +5,73 @@
   margin-bottom: 1em;
 }
 
+/* Mensaje de estado del formulario */
+
+/* Efecto overlay cuando el mensaje del formulario aparezca */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.message {
+  background-color: var(--color-background);
+  padding: 2em;
+  border-radius: 6px;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  animation: slideIn 0.3s ease;
+}
+
+.message__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success--color {
+  color: var(--color-primary);
+}
+
+.error--color {
+  color: #b14c44;
+}
+
+.message__text {
+  text-align: center;
+  line-height: 1.6;
+  max-width: 80%;
+  margin: 0.8em auto 1.5em;
+  color: var(--color-secundary-text);
+}
+
+.message__button {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.message__button:hover {
+  background-color: var(--color-darker-primary);
+}
+
+/* El formulario */
 .contact-form {
   margin: auto;
   display: flex;
@@ -56,6 +123,7 @@
 }
 
 textarea.contact-form__input {
+  font-size: 0.86em;
   resize: none;
 }
 
@@ -78,4 +146,27 @@ textarea.contact-form__input {
 .contact-form__button:hover {
   cursor: pointer;
   background-color: var(--color-darker-primary);
+}
+
+/* === ANIMACIONES === */
+
+/* Del Mensaje de error */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
