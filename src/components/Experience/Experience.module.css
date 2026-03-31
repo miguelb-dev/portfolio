@@ -15,10 +15,12 @@
   color: var(--color-secundary-text);
 }
 
+/* Wrapper para organizar la tarjeta con el trabajo y la fecha */
 .experience {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 3rem;
 }
 
 /* Tarjeta de Trabajo */
@@ -90,12 +92,23 @@
   font-size: 0.9em;
 }
 
-/* Encabezado con la fecha del Trabajo */
+/* Línea divisora entre el trabajo y la fecha */
+.line {
+  align-self: stretch;
+  display: block;
+  width: 5px;
+  height: auto;
+  background-color: var(--color-primary);
+}
 
+/* Encabezado con la fecha del Trabajo */
 .dates {
   flex-basis: 450px;
+  align-self: start;
+  margin-top: 30px;
+  font-weight: bold;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   color: var(--color-primary-text);
 }
