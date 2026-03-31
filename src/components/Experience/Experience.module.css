@@ -8,12 +8,31 @@
 .experiences-container {
   display: flex;
   flex-direction: column;
-  margin: auto;
-  width: 450px;
   justify-content: center;
   gap: 3em;
   flex-wrap: wrap;
+  margin: auto;
   color: var(--color-secundary-text);
+}
+
+.experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tarjeta de Trabajo */
+.work {
+  flex-basis: 450px;
+  padding: 1.5em;
+  background-color: var(--color-background);
+  border: 0.4px solid rgb(48, 49, 52);
+  border-radius: 6px;
+  transition: border 0.5s;
+}
+
+.work:hover {
+  border: 0.4px solid var(--color-darker-primary);
 }
 
 .work__date {
@@ -25,18 +44,6 @@
 /* El icono del calendario */
 .work__date svg {
   color: var(--color-primary);
-}
-
-.work {
-  padding: 1.5em;
-  background-color: var(--color-background);
-  border: 0.4px solid rgb(48, 49, 52);
-  border-radius: 6px;
-  transition: border 0.5s;
-}
-
-.work:hover {
-  border: 0.4px solid var(--color-darker-primary);
 }
 
 .work-wrapper {
@@ -74,11 +81,21 @@
   gap: 0.8em;
 }
 
-/* O aplicar a toda la lista */
+/* Estilos de las Viñetas */
 .work__points ::marker {
   color: var(--color-primary);
 }
 
 .work__points li {
   font-size: 0.9em;
+}
+
+/* Encabezado con la fecha del Trabajo */
+
+.dates {
+  flex-basis: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary-text);
 }

@@ -9,6 +9,7 @@
   display: flex;
   margin: auto;
   width: 70%;
+  max-width: 1100px;
   justify-content: center;
   gap: 1em;
   flex-wrap: wrap;

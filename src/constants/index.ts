@@ -13,6 +13,7 @@ import github from "../assets/img/tech/github.png";
 import markdown from "../assets/img/tech/markdown.png";
 
 // Logos de empresas
+import venvidrio from "../assets/img/work-icon/venvidrio.png";
 import rafaelrangel from "../assets/img/work-icon/rafael-rangel.png";
 
 // Capturas de los proyectos
@@ -82,6 +83,17 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    date: "Febrero 2026 - Actualidad",
+    companyName: "Venezolana del Vidrio C.A (Venvidrio)",
+    icon: venvidrio,
+    role: "Desarrollador Full-Stack",
+    points: [
+      "Diseño y desarollo una aplicación desde cero con los siguientes módulos:",
+      "Registro productivo: captura de temperatura, modelo, entradas/salidas (pérdidas/descartes) en Zona Fría.","Inventario de Decoración: control de activos y trazabilidad.",
+      "Dashboard analítico: visualización de paletas diarias/mensuales (envases embalados), pérdidas y ganancias"
+    ],
+  },
   {
     date: "Noviembre 2024 - Diciembre 2025",
     companyName: "Complejo Educativo Rafael Rangel",
