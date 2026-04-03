@@ -1,17 +1,17 @@
 .subtitle {
   color: var(--color-primary-text);
   text-align: center;
-  font-size: 2em;
-  margin-bottom: 1em;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .skills-container {
   display: flex;
   margin: auto;
-  width: 70%;
+  width: 50%;
   max-width: 1100px;
   justify-content: center;
-  gap: 1em;
+  gap: 1rem;
   flex-wrap: wrap;
   color: rgb(105, 105, 105);
 }
@@ -21,18 +21,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1em;
-  gap: 0.5em;
-  flex-basis: 130px;
-  height: 130px;
+  gap: 0.5rem;
+  flex-basis: 160px;
+  height: 160px;
+  padding: 1rem;
+  font-size: 1.1rem;
   background-color: var(--color-background);
   border: 0.4px solid rgb(48, 49, 52);
   border-radius: 6px;
 }
 
 .icon {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   object-fit: cover;
   transition:
     transform 0.15s,

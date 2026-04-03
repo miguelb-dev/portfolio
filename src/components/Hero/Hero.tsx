@@ -3,8 +3,19 @@ import styles from "./Hero.module.css";
 import { Links } from "../Links/Links";
 
 const Hero = () => {
+  // Función para scroll suave
+  const scrollToSection = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    sectionId: string,
+  ) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
-    <article id="hero" className={styles["hero"]}>
+    <article id="hero" className={`${styles["hero"]} otra-clase-global`}>
       <section className={styles["hero__information"]}>
         <h1 className={styles["hero__title"]}>
           Miguel{" "}
@@ -23,13 +34,14 @@ const Hero = () => {
             id={styles["contactButton"]}
             href="#contact"
             rel="noopener noreferrer"
+            onClick={(e) => scrollToSection(e, "contact")}
           >
             Contactame
           </a>
           <a
             id={styles["projectsButton"]}
             href="#projects"
-            rel="noopener noreferrer"
+            onClick={(e) => scrollToSection(e, "projects")}
           >
             Ver Proyectos
           </a>

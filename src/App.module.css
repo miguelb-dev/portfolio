@@ -6,13 +6,12 @@
 
 .main {
   flex: 1 0 auto;
-  padding: 50px 0 100px;
+  padding-bottom: 300px;
   display: flex;
   flex-direction: column;
-  gap: 150px;
+  gap: 300px; /* Ajusta para separar las secciones de la pagina */
 }
 
-/* Ajusta la altura en la que se ve la seccion de la pagina al hacer click en un link de la navbar */
 article {
-  scroll-margin-top: 120px;
+  scroll-margin-top: 130px; /* Ajusta la altura en la que se ve la seccion de la pagina al hacer click en un link de la navbar */
 }

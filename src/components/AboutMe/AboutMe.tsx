@@ -12,20 +12,20 @@ const AboutMe = () => {
       <section className={styles["aboutme__description"]}>
         <p className={styles["description__paragraph"]}>
           Soy un desarrollador con más de un año de experiencia en la creación
-          de aplicaciones web. Me enfoco en la resolución de problemas reales de
-          los usuarios.
+          de aplicaciones web, enfocado en la resolución de problemas reales.
         </p>
         <p className={styles["description__paragraph"]}>
-          Empecé como desarrollador frontend y administrador de bases de datos
-          SQL en el Complejo Educativo Rafael Rangel (Valera, Venezuela).
-          Actualmente, trabajo en la Venezolana del Vidrio C.A (Venvidrio) (Valera, Venezuela)
-          desarrollando desde cero un sistema fullstack para el registro y
-          control de la producción de envases de vidrio.
+          Empecé como <strong>Desarrollador Front-End</strong> y{" "}
+          <strong>Administrador de Base de Datos</strong> en el Complejo
+          Educativo Rafael Rangel (Valera, Venezuela). Y actualmente, trabajo en
+          Venvidrio (Valera, Venezuela) como desarrollador{" "}
+          <strong>Full-Stack</strong> de una aplicación para la gestión del
+          proceso productivo de la planta.
         </p>
         <p className={styles["description__paragraph"]}>
           Busco oportunidades para seguir creciendo como desarrollador,
           colaborar en equipos ambiciosos y ayudar a transformar ideas en
-          productos sólidos y con impacto en el mercado.
+          productos sólidos con impacto en el mercado.
         </p>
       </section>
     </article>

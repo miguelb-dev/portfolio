@@ -8,7 +8,7 @@
 }
 
 .logo {
-  width: 45px;
+  width: 50px;
   margin-top: 5px;
   border-radius: 6px;
   transition: transform 0.2s;
@@ -21,7 +21,7 @@
 .navbar {
   margin: auto;
   width: 92%;
-  height: 4em;
+  height: 4.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,8 +80,9 @@
 
 .ul__li a {
   text-decoration: none;
+  font-size: 1.05rem;
   color: var(--color-primary-text);
-  padding: 0.5em 1em;
+  padding: 0.5rem 1rem;
   border-radius: 6px;
   transition: background-color 0.2s;
 }
@@ -113,7 +114,7 @@
 /* Botón de descarga de CV */
 .ul__li:last-child a {
   margin-left: 10px;
-  padding: 0.5em 1em 0.5em 0.8em;
+  padding: 0.5rem 1rem 0.5rem 0.8rem;
 }
 #cv {
   display: flex;
@@ -236,7 +237,7 @@
   }
 
   .ul__li a {
-    padding: 0.5em 0.8em;
+    padding: 0.5rem 0.8rem;
     font-size: 0.9rem;
   }
 }

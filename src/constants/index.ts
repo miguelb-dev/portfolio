@@ -13,8 +13,8 @@ import github from "../assets/img/tech/github.png";
 import markdown from "../assets/img/tech/markdown.png";
 
 // Logos de empresas
-import venvidrio from "../assets/img/work-icon/venvidrio.png";
-import rafaelrangel from "../assets/img/work-icon/rafael-rangel.png";
+import venvidrio from "../assets/img/job-icon/venvidrio.png";
+import rafaelrangel from "../assets/img/job-icon/rafael-rangel.png";
 
 // Capturas de los proyectos
 import rafaelrangelapp from "../assets/img/captures/rafael-rangel-app.png";
@@ -88,22 +88,16 @@ const experiences = [
     companyName: "Venezolana del Vidrio C.A (Venvidrio)",
     icon: venvidrio,
     role: "Desarrollador Full-Stack",
-    points: [
-      "Diseño y desarollo una aplicación desde cero con los siguientes módulos:",
-      "Registro productivo: captura de temperatura, modelo, entradas/salidas (pérdidas/descartes) en Zona Fría.","Inventario de Decoración: control de activos y trazabilidad.",
-      "Dashboard analítico: visualización de paletas diarias/mensuales (envases embalados), pérdidas y ganancias"
-    ],
+    description:
+      "Desarrollo desde cero una aplicación para la gestión del proceso productivo de la planta. Abarcando tres módulos clave: Registro de variables del proceso productivo; Control de inventario del Departamento de Decoración; Visualización de un Dashboard analítico de los resultados mensuales.",
   },
   {
     date: "Noviembre 2024 - Diciembre 2025",
     companyName: "Complejo Educativo Rafael Rangel",
     icon: rafaelrangel,
     role: "Desarrollador Front-End",
-    points: [
-      "Desarrollé interfaces de usuario (UI) utilizando HTML5, CSS3 y JavaScript, asegurando la usabilidad y accesibilidad.",
-      "Diseñé y administré la base de datos MySQL, creando además las querys necesarias para la aplicación.",
-      "Trabajé de forma colaborativa con el equipo de Back-end bajo la metodología Scrum.",
-    ],
+    description:
+      "Diseñé e implementé interfaces de usuario responsivas con HTML5, CSS3 y JavaScript, priorizando usabilidad y accesibilidad. Y gestioné la base de datos MySQL, elaborando consultas optimizadas para el equipo de Back-End.",
   },
 ];
 

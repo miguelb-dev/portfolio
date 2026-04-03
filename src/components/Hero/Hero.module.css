@@ -1,8 +1,10 @@
 .hero {
+  min-height: 95dvh;
   display: flex;
-  justify-content: start;
-  gap: 120px;
-  margin: 90px 0 0 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 3rem 0;
   position: relative;
   animation-name: reveal;
   animation-duration: 1s;
@@ -20,15 +22,15 @@
 
 /* Contenedor de la información y la foto de perfil */
 .hero__information {
-  flex-basis: 650px;
+  flex-basis: 60%;
 }
 
 /* Información del perfil */
 .hero__title {
   color: var(--color-primary-text);
   font-family: Borsok;
-  font-size: 3.5em;
-  margin-bottom: 0.1em;
+  font-size: 5rem;
+  margin-bottom: 0.8rem;
 }
 
 .hero__title--efect {
@@ -39,27 +41,30 @@
 .hero__sub-title {
   color: var(--color-secundary-text);
   font-family: Montserrat;
-  font-size: 2em;
+  font-size: 3rem;
   font-weight: 400;
 }
 
 .hero__description {
   color: var(--color-secundary-text);
-  font-size: 1.15em;
-  margin: 2em 0;
+  font-size: 1.6rem;
+  max-width: 80%;
+  margin: 3.5rem 0;
 }
 
 /* Botones de llamado a la accion */
 .buttons-wrapper {
-  margin: 1em 0 3em;
+  margin: 1rem 0 3rem;
   display: flex;
-  gap: 1em;
+  gap: 1rem;
 }
 #contactButton,
 #projectsButton {
   text-decoration: none;
   display: block;
-  padding: 0.8em 1.5em;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 6px;
   transition: background-color 0.2s;
 }
@@ -82,10 +87,10 @@
 
 /* Fotografía del perfil */
 .hero__photo-wrapper {
-  flex-basis: 300px;
+  flex-basis: 500px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
 }
 
 .hero__photo {

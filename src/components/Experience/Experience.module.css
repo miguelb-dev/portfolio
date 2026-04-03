@@ -1,114 +1,78 @@
 .subtitle {
   color: var(--color-primary-text);
   text-align: center;
-  font-size: 2em;
-  margin-bottom: 1em;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .experiences-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 3em;
+  align-items: center;
+  gap: 3rem;
   flex-wrap: wrap;
   margin: auto;
   color: var(--color-secundary-text);
 }
 
-/* Wrapper para organizar la tarjeta con el trabajo y la fecha */
-.experience {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-}
-
 /* Tarjeta de Trabajo */
-.work {
-  flex-basis: 450px;
-  padding: 1.5em;
+.experience {
+  flex-grow: 1;
+  width: 45%;
+  padding: 1.5rem 3rem 2rem;
   background-color: var(--color-background);
   border: 0.4px solid rgb(48, 49, 52);
   border-radius: 6px;
   transition: border 0.5s;
 }
 
-.work:hover {
+.experience:hover {
   border: 0.4px solid var(--color-darker-primary);
 }
 
-.work__date {
+.experience__date {
   display: flex;
   align-items: center;
-  gap: 0.5em;
-  font-size: 0.8em;
+  gap: 0.5rem;
+  font-size: 1rem;
 }
 /* El icono del calendario */
-.work__date svg {
+.experience__date svg {
   color: var(--color-primary);
 }
 
-.work-wrapper {
+.experience-wrapper {
   display: flex;
-  gap: 1em;
-  margin: 1.2em 0 1.5em;
+  gap: 3rem;
+  margin: 1.2rem 0;
 }
 
-.role-wrapper {
+.experience__header {
   display: flex;
-  flex-direction: column;
-  gap: 0.5em;
+  gap: 2rem;
 }
 
-.work__role {
-  color: var(--color-primary-text);
-  font-size: 1.3em;
-}
-
-.work__company-name {
-  color: var(--color-primary);
-  font-size: 0.8em;
-}
-
-.work__icon {
-  width: 65px;
-  height: 60px;
+.experience__icon {
+  width: 130px;
+  height: 130px;
   border-radius: 6px;
 }
 
-.work__points {
-  margin-left: 1em;
+.experience__role-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 0.8em;
+  gap: 0.5rem;
 }
-
-/* Estilos de las Viñetas */
-.work__points ::marker {
-  color: var(--color-primary);
-}
-
-.work__points li {
-  font-size: 0.9em;
-}
-
-/* Línea divisora entre el trabajo y la fecha */
-.line {
-  align-self: stretch;
-  display: block;
-  width: 5px;
-  height: auto;
-  background-color: var(--color-primary);
-}
-
-/* Encabezado con la fecha del Trabajo */
-.dates {
-  flex-basis: 450px;
-  align-self: start;
-  margin-top: 30px;
-  font-weight: bold;
-  display: flex;
-  justify-content: start;
-  align-items: center;
+.experience__role {
   color: var(--color-primary-text);
+  font-size: 1.4rem;
+}
+.experience__company-name {
+  color: var(--color-primary);
+  font-size: 1rem;
+}
+
+.experience__description {
+  font-size: 1.1rem;
 }

@@ -1,11 +1,9 @@
 .subtitle {
   color: var(--color-primary-text);
   text-align: center;
-  font-size: 2em;
-  margin-bottom: 1em;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
-
-/* Mensaje de estado del formulario */
 
 /* Efecto overlay cuando el mensaje del formulario aparezca */
 .modal-overlay {
@@ -22,11 +20,12 @@
   animation: fadeIn 0.3s ease;
 }
 
+/* Mensaje de confirmación/denegación de envío */
 .message {
   background-color: var(--color-background);
-  padding: 2em;
+  padding: 2rem;
   border-radius: 6px;
-  max-width: 400px;
+  max-width: 420px;
   width: 90%;
   position: relative;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
@@ -50,16 +49,18 @@
 .message__text {
   text-align: center;
   line-height: 1.6;
+  font-size: 1.1rem;
   max-width: 80%;
-  margin: 0.8em auto 1.5em;
+  margin: 0.8rem auto 1.5rem;
   color: var(--color-secundary-text);
 }
 
 .message__button {
   background-color: var(--color-primary);
-  color: white;
-  padding: 0.75em 1.5em;
-  font-size: 1em;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
   width: 100%;
   border: none;
   border-radius: 10px;
@@ -76,8 +77,8 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  width: 600px;
-  padding: 1.5em;
+  width: 700px;
+  padding: 1.5rem;
   background-color: var(--color-background);
   border: 0.4px solid rgb(48, 49, 52);
   border-radius: 6px;
@@ -86,8 +87,8 @@
 
 .contact-form__title {
   color: var(--color-primary-text);
-  font-size: 1.3em;
-  margin-bottom: 1.5em;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
 }
 .contact-form__title--efect {
   color: var(--color-primary);
@@ -98,8 +99,8 @@
 }
 
 .contact-form__label {
-  margin-bottom: 0.7em;
-  font-size: 0.9em;
+  margin-bottom: 0.7rem;
+  font-size: 1.1rem;
   color: var(--color-secundary-text);
 }
 
@@ -109,13 +110,14 @@
 
 .contact-form__input {
   width: 100%;
-  margin-bottom: 1.8em;
+  margin-bottom: 1.8rem;
   color: var(--color-primary-text);
-  padding: 1em 1.2em;
+  padding: 1rem 1.2rem;
   background-color: rgb(25, 24, 26);
   border: 0.4px solid rgb(48, 49, 52);
   border-radius: 10px;
   transition: outline 0.2s;
+  font-size: 1.1rem;
 }
 
 .contact-form__input:focus {
@@ -123,7 +125,7 @@
 }
 
 textarea.contact-form__input {
-  font-size: 0.86em;
+  font-size: 1.1rem;
   resize: none;
 }
 
@@ -131,12 +133,12 @@ textarea.contact-form__input {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5em;
-  margin-top: 0.5em;
-  padding: 1em;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 1rem;
   color: rgb(25, 24, 26);
   background-color: var(--color-primary);
-  font-size: 0.9em;
+  font-size: 1.2rem;
   font-weight: bold;
   border: none;
   border-radius: 10px;
