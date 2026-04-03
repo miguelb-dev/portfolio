@@ -61,6 +61,7 @@ const Experience = () => {
                 })}
               </ul>
             </div>
+            <div className={styles["line"]}></div>
             <ul className={styles["dates"]}>
               <li key={work.date}>{work.date}</li>
             </ul>
