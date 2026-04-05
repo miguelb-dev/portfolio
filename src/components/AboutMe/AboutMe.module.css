@@ -18,3 +18,16 @@
   border: 0.4px solid rgb(48, 49, 52);
   border-radius: 6px;
 }
+
+/* --- RESPONSIVE DESIGNE --- */
+/* Estilos para móviles */
+@media (width <= 768px) {
+  .subtitle {
+    font-size: 2rem;
+  }
+  .aboutme__description {
+    font-size: 1.1rem;
+    width: 80%;
+    padding: 1rem 1rem;
+  }
+}

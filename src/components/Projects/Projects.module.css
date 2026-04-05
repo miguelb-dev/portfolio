@@ -100,3 +100,24 @@
   color: var(--color-primary);
   text-decoration: underline;
 }
+
+/* --- RESPONSIVE DESIGNE --- */
+/* Estilos para móviles */
+@media (width <= 768px) {
+  .subtitle {
+    font-size: 2rem;
+  }
+  .project {
+    flex-basis: 80%;
+  }
+  .project__name {
+    margin-top: 0;
+  }
+  .project__stack li {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.8rem;
+  }
+  .link {
+    font-size: 1rem;
+  }
+}

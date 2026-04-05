@@ -137,8 +137,8 @@
 }
 
 /* --- RESPONSIVE DESIGNE --- */
-/* Estilos para móviles */
-@media (width <= 768px) {
+/* Estilos para móviles y tablets*/
+@media (width <= 1024px) {
   .navbar__hamburger {
     display: block; /* Mostrar botón hamburguesa en móvil */
     position: absolute;
@@ -227,18 +227,6 @@
   }
   .nav__ul--open .ul__li:nth-child(7) {
     animation-delay: 0.4s;
-  }
-}
-
-/* Estilos para tablets */
-@media (width > 769px) and (width <= 1024px) {
-  .nav__ul {
-    gap: 5px;
-  }
-
-  .ul__li a {
-    padding: 0.5rem 0.8rem;
-    font-size: 0.9rem;
   }
 }
 

@@ -28,3 +28,11 @@ body {
     #000000 100%
   );
 }
+
+/* --- RESPONSIVE DESIGNE --- */
+/* Estilos para móviles */
+@media (width <= 768px) {
+  html {
+    scrollbar-width: thin;
+  }
+}

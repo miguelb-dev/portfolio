@@ -15,3 +15,14 @@
 article {
   scroll-margin-top: 130px; /* Ajusta la altura en la que se ve la seccion de la pagina al hacer click en un link de la navbar */
 }
+
+/* --- RESPONSIVE DESIGNE --- */
+/* Estilos para móviles */
+@media (width <= 768px) {
+  .main {
+    padding-top: 100px;
+  }
+  article {
+    scroll-margin-top: 110px;
+  }
+}

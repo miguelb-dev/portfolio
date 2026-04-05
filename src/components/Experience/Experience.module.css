@@ -19,7 +19,8 @@
 /* Tarjeta de Trabajo */
 .experience {
   flex-grow: 1;
-  width: 45%;
+  margin: 0 2.4rem;
+  max-width: 900px;
   padding: 1.5rem 3rem 2rem;
   background-color: var(--color-background);
   border: 0.4px solid rgb(48, 49, 52);
@@ -44,21 +45,25 @@
 
 .experience-wrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 3rem;
   margin: 1.2rem 0;
 }
 
 .experience__header {
+  flex-basis: 200px;
+  flex-grow: 1;
+  margin: auto;
   display: flex;
-  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1rem, 1.5vw, 2rem);
 }
-
 .experience__icon {
-  width: 130px;
-  height: 130px;
+  width: clamp(110px, 12vw, 130px);
+  height: clamp(110px, 12vw, 130px);
   border-radius: 6px;
 }
-
 .experience__role-wrapper {
   display: flex;
   flex-direction: column;
@@ -66,13 +71,28 @@
 }
 .experience__role {
   color: var(--color-primary-text);
-  font-size: 1.4rem;
+  font-size: clamp(1rem, 1.2vw, 1.4rem);
 }
 .experience__company-name {
   color: var(--color-primary);
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 0.9vw, 1rem);
 }
 
 .experience__description {
+  flex-basis: 200px;
+  flex-grow: 2;
   font-size: 1.1rem;
+}
+
+/* --- RESPONSIVE DESIGNE --- */
+/* Estilos para móviles */
+@media (width <= 768px) {
+  .subtitle {
+    font-size: 2rem;
+  }
+  .experience {
+    width: 80%;
+    margin: 0;
+    padding: 1rem;
+  }
 }
