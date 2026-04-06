@@ -20,7 +20,7 @@ article {
 /* Estilos para móviles */
 @media (width <= 768px) {
   .main {
-    padding-top: 100px;
+    padding-top: 130px;
     gap: 200px;
   }
   article {
