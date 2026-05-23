@@ -18,9 +18,9 @@ const AboutMe = () => {
           Empecé como <strong>Desarrollador Front-End</strong> y{" "}
           <strong>Administrador de Base de Datos</strong> en el Complejo
           Educativo Rafael Rangel (Valera, Venezuela). Y actualmente, trabajo en
-          Venvidrio (Valera, Venezuela) como desarrollador{" "}
-          <strong>Full-Stack</strong> de una aplicación para la gestión del
-          proceso productivo de la planta.
+          Venvidrio (Valera, Venezuela) como el{" "}
+          <strong>Desarrollador Front-End principal</strong> de una aplicación
+          para la gestión del proceso productivo de la planta.
         </p>
         <p className={styles["description__paragraph"]}>
           Busco oportunidades para seguir creciendo como desarrollador,

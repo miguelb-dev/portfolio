@@ -89,7 +89,7 @@ const experiences = [
     icon: venvidrio,
     role: "Desarrollador Full-Stack",
     description:
-      "Desarrollo desde cero una aplicación para la gestión del proceso productivo de la planta. Abarcando tres módulos clave: Registro de variables del proceso productivo; Control de inventario del Departamento de Decoración; Visualización de un Dashboard analítico de los resultados mensuales.",
+      "	Diseño y desarrollo desde cero, una aplicación para el registro de todas las variables del proceso productivo del área de Zona Fría de la planta: cantidad de envases producidos, defectos encontrados, cálculo de rendimiento y más.",
   },
   {
     date: "Noviembre 2024 - Diciembre 2025",
