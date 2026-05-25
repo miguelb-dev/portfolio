@@ -29,21 +29,21 @@ En este proyecto verás mi trayectoria como desarrollador, habilidades, proyecto
 
 1. Clona el repositorio
 
-```bash
-   git clone https://github.com/miguelb-dev/portfolio.git
-```
+   ```bash
+      git clone https://github.com/miguelb-dev/portfolio.git
+   ```
 
 2. Instala las dependencias
 
-```bash
-   npm install
-```
+   ```bash
+      npm install
+   ```
 
 3. Inicia el servidor de desarrollo
 
-```bash
-   npm run dev
-```
+   ```bash
+      npm run dev
+   ```
 
 4. Inicia el servidor de desarrollo
 
